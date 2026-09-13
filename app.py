@@ -23,7 +23,7 @@ if api_key:
         with st.spinner("Analyzing with Gemini..."):
             try:
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model="gemini-3.6-flash",
                     contents=user_prompt,
                 )
                 st.success("Done!")
